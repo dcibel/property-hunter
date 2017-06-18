@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 90%;
+  font: caption;
+  background-color: #F4F7F8;
+}
+
+p {
+  margin: 1em 2em;
+}
+
+.indented {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#comment {
+  height: 70%;
+  border: .5em solid #DDE4E9;
+  transition: background-color .2s ease-out;
+}
+
+#comment[contenteditable=true] {
+  background-color: white;
+  transition: background-color .2s ease-in;
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
